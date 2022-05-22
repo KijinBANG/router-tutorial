@@ -26,6 +26,9 @@ const Home = () => {
                 <li>
                     <Link to={'/articles'}>List of Articles</Link>
                 </li>
+                <li>
+                    <Link to={'/mypage'}>My Page</Link>
+                </li>
             </ul>
         </div>
     );

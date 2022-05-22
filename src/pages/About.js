@@ -1,4 +1,4 @@
-import {Link, useLocation, useSearchParams} from 'react-router-dom';
+import {useLocation, useSearchParams} from 'react-router-dom';
 
 const About = () => {
     const location = useLocation();
@@ -23,8 +23,7 @@ const About = () => {
     return (
         <div>
             <h1>About</h1>
-            <p>리엑트 라우터를 연습해봅시다!</p>
-            <Link to={'/'}>Home</Link>
+            <p>Let's study about react-router</p>
             <p>Querystring: {location.search}</p>
             <p>detail: {detail}</p>
             <p>mode: {mode}</p>
