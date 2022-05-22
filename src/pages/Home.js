@@ -20,9 +20,12 @@ const Home = () => {
                         <Link to={'/profiles/samcarrmichael'}>SamCarrMichael's profile</Link>
                     </li>
                     <li>
-                        <Link to={'profiles/void'}>profile that does not exist.</Link>
+                        <Link to={'/profiles/void'}>profile that does not exist.</Link>
                     </li>
                 </ul>
+                <li>
+                    <Link to={'/articles'}>List of Articles</Link>
+                </li>
             </ul>
         </div>
     );
