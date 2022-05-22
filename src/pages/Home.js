@@ -5,7 +5,25 @@ const Home = () => {
         <div>
             <h1>Home</h1>
             <p>This is my own Portal.</p>
-            <Link to={'/about'}>About</Link>
+            <ul>
+                <li>
+                    <Link to={'/about'}>About</Link>
+                </li>
+                <li>
+                    Profiles
+                </li>
+                <ul>
+                    <li>
+                        <Link to={'/profiles/keygenie'}>keyGENIE's profile</Link>
+                    </li>
+                    <li>
+                        <Link to={'/profiles/samcarrmichael'}>SamCarrMichael's profile</Link>
+                    </li>
+                    <li>
+                        <Link to={'profiles/void'}>profile that does not exist.</Link>
+                    </li>
+                </ul>
+            </ul>
         </div>
     );
 };
