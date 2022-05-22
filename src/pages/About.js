@@ -14,8 +14,8 @@ const About = () => {
     };
 
     const onIncreaseMode = () => {
-        console.log('mode: ', mode);
-        const nextMode = mode === null ? 1 : 1 + parseInt(mode);
+        console.log(isNaN(mode))
+        const nextMode = mode === null || isNaN(mode) ? 1 : 1 + parseInt(mode);
         console.log(nextMode, mode);
         setSearchParams({mode: nextMode, detail});
     };
